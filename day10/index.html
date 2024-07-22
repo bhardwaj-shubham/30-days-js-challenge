@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Day-10</title>
+	</head>
+	<body>
+		<h1>Day-10 Challenge</h1>
+
+		<div class="activity - 1">
+			<p class="first-para">This is a first paragraph.</p>
+			<button id="first-para-btn">Click to Change Paragraph</button>
+		</div>
+
+		<hr />
+
+		<div class="activity - 2">
+			<img
+				src="https://picsum.photos/200"
+				alt="Random Image"
+				id="image"
+				hidden
+			/>
+			<button id="check-image-btn">Double Click to view Image</button>
+
+			<h4
+				id="hover-text"
+				style="background-color: brown; color: white; padding: 2rem"
+			>
+				Hover over me! I will change my color.
+			</h4>
+		</div>
+
+		<hr />
+
+		<div class="activity - 3">
+			<input type="text" id="input-text-field" />
+			<p id="input-para"></p>
+		</div>
+
+		<hr />
+
+		<div class="activity - 4">
+			<form id="form">
+				<label for="text">Text Input:</label>
+				<input type="text" id="text" name="text" required />
+				<br />
+
+				<label for="dropdown">Programming Language:</label>
+				<select name="dropdown" id="dropdown">
+					<option value="">Please select an option</option>
+					<option value="Javascript">Javascript</option>
+					<option value="Python">Python</option>
+					<option value="Java">Java</option>
+					<option value="C++">C++</option>
+				</select>
+				<p hidden id="dropdown-text"></p>
+				<br />
+
+				<button type="submit" value="submit">Submit</button>
+			</form>
+		</div>
+
+		<hr />
+
+		<div class="activity - 5">
+			<label for="list">Programming Language</label>
+			<ul id="list">
+				<li>Javascript</li>
+				<li>Python</li>
+				<li>Java</li>
+				<li>C++</li>
+			</ul>
+
+			<button id="add-btn" type="button">Add Language</button>
+		</div>
+
+		<script src="./day10.js"></script>
+	</body>
+</html>
