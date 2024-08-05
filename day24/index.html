@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h2 class="title">Weather App</h2>
+
+			<div class="weather-box">
+				<div class="search-box">
+					<input type="text" id="inputCity" />
+					<button type="button" id="searchBtn">Search</button>
+				</div>
+
+				<div class="info">
+					<h3 id="cityName">
+						City:
+						<span>Please enter city name!</span>
+					</h3>
+
+					<div id="forecast" class="hidden">
+						<ul id="temp">
+							<li id="temp-day-1"></li>
+							<li id="temp-day-2"></li>
+							<li id="temp-day-3"></li>
+							<li id="temp-day-4"></li>
+							<li id="temp-day-5"></li>
+						</ul>
+
+						<ul id="weather">
+							<li id="day-1">
+								<img src="" alt="day-1" />
+							</li>
+							<li id="day-2">
+								<img src="" alt="day-2" />
+							</li>
+							<li id="day-3">
+								<img src="" alt="day-3" />
+							</li>
+							<li id="day-4">
+								<img src="" alt="day-4" />
+							</li>
+							<li id="day-5">
+								<img src="" alt="day-5" />
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

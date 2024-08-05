@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	background-color: #25d3cf;
+}
+
+.container {
+	max-width: 720px;
+	margin: 2rem auto;
+}
+
+.title {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.search-box {
+	text-align: center;
+	align-items: center;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.weather-box {
+	width: 80%;
+	margin: 1rem 8rem;
+	animation: fadeIn 0.5s;
+}
+
+#inputCity {
+	padding: 0.4rem;
+	border-radius: 8px;
+	border: none;
+	font-size: 16px;
+}
+
+#searchBtn {
+	padding: 0.6rem;
+	margin: auto 1.4rem;
+	background-color: #330867;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	font-size: 16px;
+}
+
+#searchBtn:hover {
+	cursor: pointer;
+}
+
+.info > h3 {
+	margin-left: 100px;
+}
+
+.info > h3 > span {
+	font-weight: normal;
+}
+
+.hidden {
+	display: none;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.fadeIn {
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+#temp {
+	display: flex;
+	list-style: none;
+	column-gap: 30px;
+}
+
+#temp > li {
+	margin: auto 2px;
+}
+
+#weather {
+	display: flex;
+	list-style: none;
+}
+
+#weather > li > img {
+	width: 80px;
+	margin: auto 4px;
+}
