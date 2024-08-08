@@ -1,0 +1,121 @@
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	background: #e1f0da;
+}
+
+input,
+textarea {
+	margin: 0.6rem 1rem;
+	padding: 0.6rem;
+	border-radius: 10px;
+	font-size: 1rem;
+	border-style: none;
+	width: 200px;
+}
+
+#submit {
+	background-color: #f08a5d;
+	color: white;
+	margin: 10px;
+	padding: 15px 32px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#submit:hover {
+	background-color: #b83b5e;
+	transform: scale(1.05);
+}
+
+#submit:active {
+	transform: scale(0.95);
+	background-color: #6a2c70;
+}
+
+section {
+	display: flex;
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 2rem 8rem;
+}
+
+.header {
+	font-size: large;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+#title,
+#date {
+	margin-left: 4rem;
+}
+
+.description {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hidden {
+	display: none;
+}
+
+.task-box {
+	display: block;
+	margin: 0.2rem 4rem;
+}
+
+thead tr {
+	margin-bottom: 0.4rem;
+}
+
+.tbody td {
+	padding: 0.4rem;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid #ccc;
+}
+
+th,
+td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+.chcked-btn {
+	background-color: #f44336;
+	color: white;
+	padding: 6px 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border: none;
+	cursor: pointer;
+}

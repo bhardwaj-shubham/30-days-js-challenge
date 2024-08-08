@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task Management</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+			integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<main class="main">
+			<div class="container">
+				<div class="header">
+					<h1>Task Management</h1>
+				</div>
+
+				<section>
+					<div class="task-form">
+						<h2>Add Task</h2>
+						<form id="form">
+							<div class="title">
+								<label for="title">Title:</label>
+								<input
+									type="text"
+									name="title"
+									id="title"
+									required
+								/>
+							</div>
+							<div class="description">
+								<label for="description">Description:</label>
+								<textarea
+									name="description"
+									id="description"
+								></textarea>
+							</div>
+							<div class="due-date">
+								<label for="due-date">Date:</label>
+								<input
+									type="date"
+									name="due-date"
+									id="date"
+									required
+								/>
+							</div>
+							<div>
+								<button type="submit" id="submit">
+									Add Task
+								</button>
+							</div>
+						</form>
+					</div>
+
+					<div class="tasks">
+						<h2>Tasks</h2>
+						<div class="task-box">
+							<table class="">
+								<thead>
+									<tr>
+										<td></td>
+										<td>Task</td>
+										<td>Desc</td>
+										<td>Date</td>
+									</tr>
+								</thead>
+								<tbody class="tbody">
+									<tr id="no-data-row" style="display: none">
+										<td colspan="4">No data available</td>
+									</tr>
+									<tr>
+										<td>
+											<button
+												type="button"
+												class="checked-btn"
+											>
+												<i
+													class="fa-solid fa-trash"
+												></i>
+											</button>
+										</td>
+										<td>Learn JavaScript</td>
+										<td>I want to learn in this month.</td>
+										<td>2024-08-08</td>
+										<td>
+											<button
+												type="button"
+												class="edit-btn"
+											>
+												<i
+													class="fa-solid fa-pen-to-square"
+												></i>
+											</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<script src="script.js"></script>
+	</body>
+</html>
