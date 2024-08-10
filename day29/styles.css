@@ -1,0 +1,231 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+header {
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+}
+
+main {
+	max-width: 800px;
+	margin: 20px auto;
+	padding: 0 20px;
+}
+
+/* Login Form Styles */
+#loginSection {
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#loginForm label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+#loginForm input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+#loginForm button {
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1em;
+	transition: background-color 0.3s ease;
+}
+
+#loginForm button:hover {
+	background-color: #0056b3;
+}
+
+/* Post Form Styles */
+#postSection {
+	background: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#postForm label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+}
+
+#postForm textarea,
+#postForm input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+#postForm button {
+	background-color: #28a745;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1em;
+	transition: background-color 0.3s ease;
+}
+
+#postForm button:hover {
+	background-color: #218838;
+}
+
+/* Post Container Styles */
+.post-container {
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-container:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Logged-In User Posts */
+.logged-in-user {
+	background: #e0f7fa;
+	border-left: 5px solid #00796b;
+}
+
+/* Other User Posts */
+.other-user {
+	background: #ffffff;
+	border-left: 5px solid #0288d1;
+}
+
+/* Post Text */
+.post-container p {
+	font-size: 1em;
+	line-height: 1.6;
+	color: #444;
+	margin-bottom: 15px;
+}
+
+/* Post Image */
+.post-image {
+	max-width: 100%;
+	height: 350px;
+	border-radius: 10px;
+	margin-top: 10px;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.post-image:hover {
+	transform: scale(1.05);
+	opacity: 0.9;
+}
+
+/* Post Actions */
+.post-actions {
+	display: flex;
+	justify-content: flex-start;
+	gap: 10px;
+	margin-top: 15px;
+}
+
+.post-actions button {
+	background-color: #007bff;
+	color: white;
+	padding: 8px 12px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 0.9em;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.post-actions button:hover {
+	background-color: #0056b3;
+	transform: scale(1.05);
+}
+
+/* Comments Section */
+.comments-section {
+	margin-top: 15px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.3s ease;
+}
+
+.post-container:hover .comments-section {
+	max-height: 500px;
+}
+
+.comments-section p {
+	background-color: #f1f1f1;
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+/* Add Comment */
+.add-comment {
+	display: flex;
+	margin-top: 10px;
+	gap: 10px;
+}
+
+.add-comment .comment-input {
+	flex: 1;
+	padding: 8px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-comment .comment-input:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.add-comment .submit-comment {
+	padding: 8px 12px;
+	background-color: #28a745;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.add-comment .submit-comment:hover {
+	background-color: #218838;
+}
+
+/* Post Stats */
+.post-stats {
+	margin-top: 10px;
+	font-size: 0.9em;
+	color: #555;
+}
+
+.post-stats p {
+	margin: 0;
+}
