@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Social Media Dashboard</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Social Media Dashboard</h1>
+		</header>
+
+		<main>
+			<section id="notificationSection" style="display: none">
+				<h2>Notifications</h2>
+				<div id="notifications"></div>
+			</section>
+
+			<section id="registrationSection">
+				<h2>Register</h2>
+				<form id="registrationForm">
+					<label for="registerUsername">Username:</label>
+					<input
+						type="text"
+						id="registerUsername"
+						name="username"
+						required
+					/>
+					<label for="registerEmail">Email:</label>
+					<input
+						type="email"
+						id="registerEmail"
+						name="email"
+						required
+					/>
+					<label for="registerPassword">Password:</label>
+					<input
+						type="password"
+						id="registerPassword"
+						name="password"
+						required
+					/>
+					<button type="submit">Register</button>
+					<p>
+						Already have an account?
+						<a href="#" id="showLoginLink">Login here</a>
+					</p>
+				</form>
+			</section>
+
+			<section id="loginSection" style="display: none">
+				<h2>Login</h2>
+				<form id="loginForm">
+					<label for="username">Username:</label>
+					<input type="text" id="username" name="username" required />
+					<label for="password">Password:</label>
+					<input
+						type="password"
+						id="password"
+						name="password"
+						required
+					/>
+					<button type="submit">Login</button>
+					<p>
+						Don't have an account?
+						<a href="#" id="showRegisterLink">Register here</a>
+					</p>
+				</form>
+			</section>
+
+			<section id="profileSection" style="display: none">
+				<h2>Profile</h2>
+				<div id="profileInfo">
+					<p>User: <span id="profileUsername"></span></p>
+					<p>Email: <span id="profileEmail"></span></p>
+					<button id="updateProfileButton">Update Profile</button>
+				</div>
+
+				<div id="updateProfileSection" style="display: none">
+					<h3>Update Profile</h3>
+					<form id="updateProfileForm">
+						<label for="newUsername">New Username:</label>
+						<input
+							type="text"
+							id="newUsername"
+							name="newUsername"
+						/>
+
+						<label for="newEmail">New Email:</label>
+						<input type="email" id="newEmail" name="newEmail" />
+
+						<button type="submit">Save Changes</button>
+						<button type="button" id="cancelUpdateButton">
+							Cancel
+						</button>
+					</form>
+				</div>
+			</section>
+
+			<section id="postSection" style="display: none">
+				<h2>Create a Post</h2>
+				<form id="postForm">
+					<label for="postText">Text:</label>
+					<textarea id="postText" name="postText" required></textarea>
+					<label for="postImage">Image URL:</label>
+					<input type="url" id="postImage" name="postImage" />
+					<button type="submit">Post</button>
+				</form>
+			</section>
+
+			<section id="postFeed">
+				<!-- Posts will be displayed here -->
+			</section>
+		</main>
+
+		<script src="scripts.js"></script>
+	</body>
+</html>
